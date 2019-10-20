@@ -285,12 +285,23 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
 .twitter-user-profile img{
   margin-left: auto;
 }
-
+/* 공통 푸터 */
 .footer{
-  background-color: purple;
-  height: 10vh;
+  /* background-color: #988574; */
+  color: #fff;
+  padding: 2em 1em;
+  background-color: #6d695c;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;  /* background-image: repeating-linear-gradient(rgba(255,0,0,.5) 0, rgba(255,0,0,.5) 20px,transparent 20px,transparent 40px); */
 }
-
+.address{
+  font-style: normal;
+  margin-bottom: .5em;
+}
 /* Mobile device*/
 @media screen and (max-width:1000px){
   /* 모바일 헤더 */
@@ -399,7 +410,7 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
   .nav-act .menu{
     transform: none;
     width: 80%;
-    padding: 2em 1em;
+    padding: 2em 1em 2em 2em;
     color: #fff;
     background-color: rgba(0,0,0,.85);
     margin: 0;
@@ -417,6 +428,16 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
   }
   .sub-menu li{
     margin: .5em 0;
+  }
+  .main{
+    padding: 0 1em;
+  }
+  /* 모바일 푸터 */
+  .footer{
+    margin-top: 1em;
+  }
+  .address span{
+    display:block;
   }
 }
 
@@ -514,5 +535,9 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
   }
   .twitter{
     width: 400px
+  }
+  /* 데스크탑 푸터 */
+  .footer{
+    text-align: center
   }
 }
